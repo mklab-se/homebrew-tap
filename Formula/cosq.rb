@@ -7,16 +7,16 @@ class Cosq < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "5f40cbb512bfa26307ca2bca7e28c72609e88c39d256234bde6fa3112242d6fd"
+      sha256 "51098f3e1c7e229f3526b558f2e6c786e6831b6b949b53e7504f9ccab96a04ac"
     else
       url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "6395f8f93b6b3cfbd9bfc2992fc7a0cd3a858cd63fb801687661a22ceb572f11"
+      sha256 "d55e7bfbbc9009649fc4c9e40f8c0c6c930f32b028568e051b79bff28fd62319"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8b1c15f78b914d155793b3f3289d591d537b15aebf2c1baa7ffb8b1c11bf44fe"
+    sha256 "64415f1374e0137384a4f00bbd7c157ec3f7aa416afd42986c59c9d8fb9d6195"
   end
 
   def install
