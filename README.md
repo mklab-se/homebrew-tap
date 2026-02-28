@@ -1,10 +1,12 @@
-# MKLab Homebrew Tap
-
 <p align="center">
-  <img src="media/tap-vertical.png" alt="MKLab Homebrew Tap" width="300">
+  <img src="https://raw.githubusercontent.com/mklab-se/homebrew-tap/main/media/tap-vertical.png" alt="MKLab Homebrew Tap" width="600">
 </p>
 
-Homebrew formulae for [MKLab](https://github.com/mklab-se) projects.
+<h1 align="center">MKLab Homebrew Tap</h1>
+
+<p align="center">
+  Homebrew formulae for <a href="https://github.com/mklab-se">MKLab</a> projects.
+</p>
 
 ## Install
 
