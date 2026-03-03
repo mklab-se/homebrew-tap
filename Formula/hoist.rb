@@ -1,22 +1,22 @@
 class Hoist < Formula
   desc "Configuration-as-code CLI for Azure AI Search and Microsoft Foundry"
   homepage "https://github.com/mklab-se/hoist"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/hoist/releases/download/v#{version}/hoist-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "69c46446e43c2b16f43328cb6b87ce2004700348148b10385358a45f88e066c4"
+      sha256 "31f5b874e424fbbf4dc1cbd3a5c53c325bec530a5972ca89bce4d4c2706a5173"
     else
       url "https://github.com/mklab-se/hoist/releases/download/v#{version}/hoist-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5aced2a3b2d8ec8f1a3dbaca2ba7c6fec6aea933403ca110ffc8b193d8b50ecc"
+      sha256 "e85f4b63b0cb1c55908d658664af70b51aa5f1b295148e15b6636b1eed08e55e"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/hoist/releases/download/v#{version}/hoist-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "244f7214a6ec7627160ccec66d43ddeb6997292d989c792383902e8641e0725c"
+    sha256 "4e992d3817142621ab31097a24d3f511803f40f62d5fd4df61957068ac28ac94"
   end
 
   def install
