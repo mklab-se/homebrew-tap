@@ -27,5 +27,5 @@ brew install <formula>
 |---|---|
 | [ailloy](https://github.com/mklab-se/ailloy) | An AI abstraction layer for Rust |
 | [cosq](https://github.com/mklab-se/cosq) | A CLI to query your Azure Cosmos DB instances |
-| [hoist](https://github.com/mklab-se/hoist) | Configuration-as-code CLI for Azure AI Search |
+| [rigg](https://github.com/mklab-se/rigg) | Configuration-as-code CLI for Azure AI Search |
 | [mdeck](https://github.com/mklab-se/mdeck) | A markdown-based presentation tool |
