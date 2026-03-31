@@ -1,22 +1,22 @@
-class rigg < Formula
+class Rigg < Formula
   desc "Configuration-as-code CLI for Azure AI Search and Microsoft Foundry"
   homepage "https://github.com/mklab-se/rigg"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/rigg/releases/download/v#{version}/rigg-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d001956d1300a45c097f22974a5826c03b396365568595b63d9c400d65236cb2"
+      sha256 "618c124dfe29dba21c488fbad481daab2d4a0fb08d30db867b1710eb1943382c"
     else
       url "https://github.com/mklab-se/rigg/releases/download/v#{version}/rigg-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "f6f4d4ce5004b784203a3afaf051333a1670e94ea6f37c493e600e4ce6cc6c32"
+      sha256 "47b8e5c476296ff0670ce2fba86ee390de57474ff7a42a64214e29c8c7127e79"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/rigg/releases/download/v#{version}/rigg-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "fa5a2da17fc84f0980b96159f7ac871061c2caf100627068a99001e1739ed80f"
+    sha256 "ff97e223b4a4c003bf35eaf58d324eaa465d58cf0257405c100d6f5c2087b721"
   end
 
   def install
