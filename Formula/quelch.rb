@@ -1,22 +1,22 @@
 class Quelch < Formula
   desc "Ingest data from Jira, Confluence, and more directly into Azure AI Search"
   homepage "https://github.com/mklab-se/quelch"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/quelch/releases/download/v#{version}/quelch-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "023762468976befdf2340d123d094e7733290822fc6394a671023cff6d397a81"
+      sha256 "92c6954b105938264323f44f8e1fd827cafb87f67ea2b27c889b3b7cf99a9f1c"
     else
       url "https://github.com/mklab-se/quelch/releases/download/v#{version}/quelch-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "f658b6f82a14338293da229a882089471c3b739c366b4cdd33972fe92061bc68"
+      sha256 "14295053bb1638c17eeef8fba7cd317cab6581b934166360d3de97b410c64004"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/quelch/releases/download/v#{version}/quelch-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "677ca63908b9b9929adfd2a8a364e47a7cce8d4b9eef5ab520fb4613a82b3550"
+    sha256 "0300554749da09559ef173717cc2ed2513008bb65afd5f44e40117816e1825b9"
   end
 
   def install
