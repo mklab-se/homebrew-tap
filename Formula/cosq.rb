@@ -1,22 +1,22 @@
 class Cosq < Formula
   desc "A CLI to query your Azure Cosmos DB instances"
   homepage "https://github.com/mklab-se/cosq"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "2d8dd13b2211e0a193feeb332a07bbcd5e9d5f45ea31f2c742deba33e52890cd"
+      sha256 "8c69744f54f6a603c3f522b7046d6727dba590899f4af8a75200b9c2a5622ca9"
     else
       url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "8aca0845708a25893f922375d49023f08684ed2a9e37b2f4b1b63f053d16e839"
+      sha256 "66d3f272ba6406ced5149816c72690e6b253008db9cc23c108b567fccfeb7e37"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/cosq/releases/download/v#{version}/cosq-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "985f483e6f058b4ba10eb1ed734f7e0f2c2a337dbfeb5ca95e31ad7cde26a0d4"
+    sha256 "3cedb8b546b0fba65f19142a9deb1bae5b7b1e5296abcde1dfa4e95155926bbc"
   end
 
   def install
