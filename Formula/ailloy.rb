@@ -1,22 +1,22 @@
 class Ailloy < Formula
   desc "An AI abstraction layer for Rust"
   homepage "https://github.com/mklab-se/ailloy"
-  version "2.0.0"
+  version "2.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/ailloy/releases/download/v#{version}/ailloy-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "a37938832690dd6f344930820cc6d959d4b0e81e83c1457f726a3eb8e4eacbaa"
+      sha256 "e485e18d8e25d7c5329eda07ab46378be73005b7b72949d19e5cf7b053b63dd7"
     else
       url "https://github.com/mklab-se/ailloy/releases/download/v#{version}/ailloy-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c3882e117bd7993de0e11c3077d3a601b3c4372e2eca94242372e033358ae71b"
+      sha256 "edb0a1ca8b25313c8211d2f7b1b5949bad43e4cdee2202023a45585a7e3df8b7"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/ailloy/releases/download/v#{version}/ailloy-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "8f3dcd0507812be8b93a8043dac94385e66e9907b3dd352219f0c157ea692d3a"
+    sha256 "6dfc804b2e21d82a61a8d118d65a02020398e15770e97d324dcce90dd4dac5f3"
   end
 
   def install
