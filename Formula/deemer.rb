@@ -1,22 +1,22 @@
 class Deemer < Formula
   desc "Run AI-assisted integration tests that judge whether your tests passed"
   homepage "https://github.com/mklab-se/deemer"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/deemer/releases/download/v#{version}/deemer-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "f88e15effba2d70705cafdfeea0390ee3cfce890bcc03b454cc487fb7c9fa43a"
+      sha256 "02c15bf20d5e3681f0b4bc0388f887ed6d832b3dc03d9d30523a05cae317c885"
     else
       url "https://github.com/mklab-se/deemer/releases/download/v#{version}/deemer-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "dc3553abe8051bd4db0cabb4911f6ebd4ad6a52f0a595d72b761d8a4b1c386bf"
+      sha256 "cbd86f17dd88b62c34b7aad810026fcb964a0383677b2aece2e652055cc43b9c"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/deemer/releases/download/v#{version}/deemer-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ff3f2127b05b450c34922c40aba48147b3ca23c0e972f4723025d2f5cb21e39f"
+    sha256 "f32402ac749dd59bd80c395cdaddf45753836423b9b154f2baeaac27d6d07546"
   end
 
   def install
