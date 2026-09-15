@@ -1,22 +1,22 @@
 class Mdeck < Formula
   desc "A markdown-based presentation tool"
   homepage "https://github.com/mklab-se/mdeck"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/mdeck/releases/download/v#{version}/mdeck-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "68748fa339accc26f46830658e17074104f339d193dc3e7e41a1abe64a98e534"
+      sha256 "7b8a9283cd360025b257d67701fc4330bca8e2f8e8377b6cd3e0fd3450658f68"
     else
       url "https://github.com/mklab-se/mdeck/releases/download/v#{version}/mdeck-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c0a3945ce06841806b6838027fdca040a6d6e4647b668cf0ba163eaca64357c6"
+      sha256 "caca21bcd1d6fc54d064b8b2b9a62949fb38e4839ef7d16a3970ec6fa7fb59ca"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/mdeck/releases/download/v#{version}/mdeck-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "67fea638e10ec9ec7cdbbbf0e41f5476054d74e84ca4003beb071505bca659e9"
+    sha256 "561afdc5f14d2a30290fb6341f5c14df07928e3ee5e9469f48cd1e54266e432e"
   end
 
   def install
