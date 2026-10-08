@@ -1,23 +1,22 @@
 class Honk < Formula
   desc "Make your computer honk like an old-school car"
   homepage "https://github.com/mklab-se/honk"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/honk/releases/download/v#{version}/honk-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1df768f577042636d4383fc3212d4cc3ae77f31bd94e00b134d3b2b6c9fa45d2"
+      sha256 "8740a03f4afa8ebbe4d7fe5f2fe608f3b0acf29391642adcc92f2ba40b2db6f2"
     else
       url "https://github.com/mklab-se/honk/releases/download/v#{version}/honk-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "3922510c65affbfe4e6607efd6d86929b7f2492ebd5937fa2e9c2cab7895cd33"
+      sha256 "ef81ac9ef4bd85e0580a84e50e20b9ec74e130a908e3a78629ecc3bded2bf4db"
     end
   end
 
   on_linux do
-    depends_on "alsa-lib"
     url "https://github.com/mklab-se/honk/releases/download/v#{version}/honk-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "fdf229169a740a979a8917c0cb7b449fc9b28b5dcafe12be8aadcb56a4134688"
+    sha256 "120e506bb1fce792038f684cb320ac96a12defc94ba8a3b503cade66b54d969f"
   end
 
   def install
