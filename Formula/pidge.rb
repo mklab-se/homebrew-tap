@@ -1,22 +1,22 @@
 class Pidge < Formula
   desc "A fast CLI for e-mail and calendar"
   homepage "https://github.com/mklab-se/pidge"
-  version "1.7.1"
+  version "1.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/pidge/releases/download/v#{version}/pidge-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "59889d678e0f650d26caf56525c2991b5035895cd28a5adceff6fec0534ced1b"
+      sha256 "3dee86bf23f9092d7383897c70dc8a912a76ad002ad346f56039ad93e7e4ff3e"
     else
       url "https://github.com/mklab-se/pidge/releases/download/v#{version}/pidge-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "1241a3375b64a0ce4960c7bb16592caadcadde0ec1f9dabe88ad87eda095f40d"
+      sha256 "ff87293de565d538bf3a8f0a2390c107afb7251ed8045cfdcba5b64c2dff40fc"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/pidge/releases/download/v#{version}/pidge-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e2a8384e252d88be2ff1570043e530d20385acf133450c9ea61f84d18e81e13e"
+    sha256 "6083f4f75b1d44110bc01d16dc11289af809c9a7195f396be8f574119bcbeb24"
   end
 
   def install
