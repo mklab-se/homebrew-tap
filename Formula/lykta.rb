@@ -1,22 +1,22 @@
 class Lykta < Formula
   desc "A highly visible dashboard for monitoring GitHub Actions workflows"
   homepage "https://github.com/mklab-se/lykta"
-  version "0.0.3"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/lykta/releases/download/v#{version}/lykta-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "66f08e30b2fa11a848161831ff5d6e4cc60d6016adc793c48a0565bd8c299123"
+      sha256 "ea9fc9cca183e0ffa3a46ca79ec4d354953f985ec62b78b790605729497e5938"
     else
       url "https://github.com/mklab-se/lykta/releases/download/v#{version}/lykta-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d6db13b854a1d7f2e7c03dc0d7965db492e5b1198bdf3be55686ff30cba5cc48"
+      sha256 "508931cd170b58af8c1f0e447d1b3a64533b49c2ee2d78ca60ed832d9bb07f83"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/lykta/releases/download/v#{version}/lykta-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ea5e06f2905664b1e7f7a6dd2a9e52e68862d21b5e80eb2c22589d5cfd810523"
+    sha256 "ac48ae62e98c106a49cb01273138e01b16e69bab772de45abbe240e54caf2118"
   end
 
   def install
