@@ -1,22 +1,22 @@
 class Kloss < Formula
   desc "Build models from virtual bricks, by hand or through MCP"
   homepage "https://github.com/mklab-se/kloss"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mklab-se/kloss/releases/download/v#{version}/kloss-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "c85d5ef6d1a3a9d620d19374d8a0cf7956c043df02736e084f853a75685476ad"
+      sha256 "246a39048a1e2dab665f41acf0002ac858298fa69dc018dd9a5b29e8ccac3ac8"
     else
       url "https://github.com/mklab-se/kloss/releases/download/v#{version}/kloss-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "043dd817c2bb0e67760ab378986217a1fadbfe1cbb19d444f37f4701b33e8e91"
+      sha256 "31c49671b9532f7e2f205f7e9d6a0868c2eeaab459e5b23f3f8da6d4290ba51c"
     end
   end
 
   on_linux do
     url "https://github.com/mklab-se/kloss/releases/download/v#{version}/kloss-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "958e10335aba5892a21cc6b3bd9567c5ea6710e41f0f391d85a4a7f8bd613472"
+    sha256 "de930176467b5abc995cb1e09e0484a957bc750f4ebcc70aebcfeb9b4c256153"
   end
 
   def install
